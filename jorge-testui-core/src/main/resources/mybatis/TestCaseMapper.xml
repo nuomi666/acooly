@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.platform.dao.TestCaseDao">
+
+    <resultMap id="testCaseResultMap" type="com.jorge.testui.platform.entity.TestCase">
+        <id property="id" column="testCase_id"/>
+        <result property="caseNo" column="testCase_case_no"/>
+        <result property="caseName" column="testCase_case_name"/>
+        <result property="caseType" column="testCase_case_type"/>
+        <result property="url" column="testCase_url"/>
+        <result property="input" column="testCase_input"/>
+        <result property="protocolType" column="testCase_protocol_type"/>
+        <result property="createTime" column="testCase_create_time"/>
+        <result property="updateTime" column="testCase_update_time"/>
+        <result property="projectNo" column="testCase_project_no"/>
+        <result property="interfaceNo" column="testCase_interface_no"/>
+    </resultMap>
+
+    <sql id="testCaseSqlSelect">
+            testCase.id as testCase_id,
+            testCase.case_no as testCase_case_no,
+            testCase.case_name as testCase_case_name,
+            testCase.case_type as testCase_case_type,
+            testCase.url as testCase_url,
+            testCase.input as testCase_input,
+            testCase.protocol_type as testCase_protocol_type,
+            testCase.create_time as testCase_create_time,
+            testCase.update_time as testCase_update_time,
+            testCase.project_no as testCase_project_no,
+            testCase.interface_no as testCase_interface_no
+    </sql>
+
+</mapper>

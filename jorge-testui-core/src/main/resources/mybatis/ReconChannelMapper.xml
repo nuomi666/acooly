@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.database.bill.dao.ReconChannelDao">
+
+    <resultMap id="reconChannelResultMap" type="com.jorge.testui.database.bill.entity.ReconChannel">
+        <id property="id" column="reconChannel_id"/>
+        <result property="channelType" column="reconChannel_channel_type"/>
+        <result property="activeStatus" column="reconChannel_active_status"/>
+        <result property="comments" column="reconChannel_comments"/>
+        <result property="createTime" column="reconChannel_create_time"/>
+        <result property="updateTime" column="reconChannel_update_time"/>
+    </resultMap>
+
+    <sql id="reconChannelSqlSelect">
+            reconChannel.id as reconChannel_id,
+            reconChannel.channel_type as reconChannel_channel_type,
+            reconChannel.active_status as reconChannel_active_status,
+            reconChannel.comments as reconChannel_comments,
+            reconChannel.create_time as reconChannel_create_time,
+            reconChannel.update_time as reconChannel_update_time
+    </sql>
+
+</mapper>

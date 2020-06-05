@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.platform.dao.InterfaceDao">
+
+    <resultMap id="interfaceResultMap" type="com.jorge.testui.platform.entity.Interface">
+        <id property="id" column="interface_id"/>
+        <result property="interfaceNo" column="interface_interface_no"/>
+        <result property="interfaceName" column="interface_interface_name"/>
+        <result property="projectNo" column="interface_project_no"/>
+        <result property="createTime" column="interface_create_time"/>
+        <result property="updateTime" column="interface_update_time"/>
+    </resultMap>
+
+    <sql id="interfaceSqlSelect">
+            interface.id as interface_id,
+            interface.interface_no as interface_interface_no,
+            interface.interface_name as interface_interface_name,
+            interface.project_no as interface_project_no,
+            interface.create_time as interface_create_time,
+            interface.update_time as interface_update_time
+    </sql>
+
+</mapper>

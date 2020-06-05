@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.platform.dao.LogInfoDao">
+
+    <resultMap id="logInfoResultMap" type="com.jorge.testui.platform.entity.LogInfo">
+        <id property="id" column="logInfo_id"/>
+        <result property="projectNo" column="logInfo_project_no"/>
+        <result property="interfaceNo" column="logInfo_interface_no"/>
+        <result property="caseNo" column="logInfo_case_no"/>
+        <result property="parametersNo" column="logInfo_parameters_no"/>
+        <result property="requestInfo" column="logInfo_request_info"/>
+        <result property="resultInfo" column="logInfo_result_info"/>
+        <result property="createTime" column="logInfo_create_time"/>
+        <result property="updateTime" column="logInfo_update_time"/>
+        <result property="memo" column="logInfo_memo"/>
+        <result property="exexuteStatus" column="exexute_status"/>
+    </resultMap>
+
+    <sql id="logInfoSqlSelect">
+            logInfo.id as logInfo_id,
+            logInfo.project_no as logInfo_project_no,
+            logInfo.interface_no as logInfo_interface_no,
+            logInfo.case_no as logInfo_case_no,
+            logInfo.parameters_no as logInfo_parameters_no,
+            logInfo.request_info as logInfo_request_info,
+            logInfo.result_info as logInfo_result_info,
+            logInfo.create_time as logInfo_create_time,
+            logInfo.update_time as logInfo_update_time,
+            logInfo.memo as logInfo_memo,
+            logInfo.exexute_status as exexute_status
+    </sql>
+
+</mapper>

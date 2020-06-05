@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.platform.dao.CaseRequestParameterDao">
+
+    <resultMap id="caseRequestParameterResultMap" type="com.jorge.testui.platform.entity.CaseRequestParameter">
+        <id property="id" column="caseRequestParameter_id"/>
+        <result property="caseNo" column="caseRequestParameter_case_no"/>
+        <result property="requestDemo" column="caseRequestParameter_request_demo"/>
+    </resultMap>
+
+    <sql id="caseRequestParameterSqlSelect">
+            caseRequestParameter.id as caseRequestParameter_id,
+            caseRequestParameter.case_no as caseRequestParameter_case_no,
+            caseRequestParameter.request_demo as caseRequestParameter_request_demo
+    </sql>
+
+</mapper>

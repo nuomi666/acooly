@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.platform.dao.ProjectDao">
+
+    <resultMap id="projectResultMap" type="com.jorge.testui.platform.entity.Project">
+        <id property="id" column="project_id"/>
+        <result property="projectNo" column="project_project_no"/>
+        <result property="projectName" column="project_project_name"/>
+        <result property="createTime" column="project_create_time"/>
+        <result property="updateTime" column="project_update_time"/>
+    </resultMap>
+
+    <sql id="projectSqlSelect">
+            project.id as project_id,
+            project.project_no as project_project_no,
+            project.project_name as project_project_name,
+            project.create_time as project_create_time,
+            project.update_time as project_update_time
+    </sql>
+
+</mapper>

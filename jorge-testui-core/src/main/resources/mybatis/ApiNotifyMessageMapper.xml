@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.database.openapi.dao.ApiNotifyMessageDao">
+
+    <resultMap id="apiNotifyMessageResultMap" type="com.jorge.testui.database.openapi.entity.ApiNotifyMessage">
+        <id property="id" column="apiNotifyMessage_id"/>
+        <result property="gid" column="apiNotifyMessage_gid"/>
+        <result property="partnerId" column="apiNotifyMessage_partner_id"/>
+        <result property="requestNo" column="apiNotifyMessage_request_no"/>
+        <result property="merchOrderNo" column="apiNotifyMessage_merch_order_no"/>
+        <result property="messageType" column="apiNotifyMessage_message_type"/>
+        <result property="service" column="apiNotifyMessage_service"/>
+        <result property="version" column="apiNotifyMessage_version"/>
+        <result property="url" column="apiNotifyMessage_url"/>
+        <result property="content" column="apiNotifyMessage_content"/>
+        <result property="respInfo" column="apiNotifyMessage_resp_info"/>
+        <result property="sendCount" column="apiNotifyMessage_send_count"/>
+        <result property="nextSendTime" column="apiNotifyMessage_next_send_time"/>
+        <result property="status" column="apiNotifyMessage_status"/>
+        <result property="executeStatus" column="apiNotifyMessage_execute_status"/>
+        <result property="createTime" column="apiNotifyMessage_create_time"/>
+        <result property="updateTime" column="apiNotifyMessage_update_time"/>
+        <result property="protocol" column="apiNotifyMessage_protocol"/>
+        <result property="signType" column="apiNotifyMessage_sign_type"/>
+        <result property="sign" column="apiNotifyMessage_sign"/>
+    </resultMap>
+
+    <sql id="apiNotifyMessageSqlSelect">
+            apiNotifyMessage.id as apiNotifyMessage_id,
+            apiNotifyMessage.gid as apiNotifyMessage_gid,
+            apiNotifyMessage.partner_id as apiNotifyMessage_partner_id,
+            apiNotifyMessage.request_no as apiNotifyMessage_request_no,
+            apiNotifyMessage.merch_order_no as apiNotifyMessage_merch_order_no,
+            apiNotifyMessage.message_type as apiNotifyMessage_message_type,
+            apiNotifyMessage.service as apiNotifyMessage_service,
+            apiNotifyMessage.version as apiNotifyMessage_version,
+            apiNotifyMessage.url as apiNotifyMessage_url,
+            apiNotifyMessage.content as apiNotifyMessage_content,
+            apiNotifyMessage.resp_info as apiNotifyMessage_resp_info,
+            apiNotifyMessage.send_count as apiNotifyMessage_send_count,
+            apiNotifyMessage.next_send_time as apiNotifyMessage_next_send_time,
+            apiNotifyMessage.status as apiNotifyMessage_status,
+            apiNotifyMessage.execute_status as apiNotifyMessage_execute_status,
+            apiNotifyMessage.create_time as apiNotifyMessage_create_time,
+            apiNotifyMessage.update_time as apiNotifyMessage_update_time,
+            apiNotifyMessage.protocol as apiNotifyMessage_protocol,
+            apiNotifyMessage.sign_type as apiNotifyMessage_sign_type,
+            apiNotifyMessage.sign as apiNotifyMessage_sign
+    </sql>
+
+</mapper>

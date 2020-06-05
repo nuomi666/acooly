@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.database.bill.dao.ReconReconResultDao">
+
+    <resultMap id="reconReconResultResultMap" type="com.jorge.testui.database.bill.entity.ReconReconResult">
+        <id property="id" column="reconReconResult_id"/>
+        <result property="periodNo" column="reconReconResult_period_no"/>
+        <result property="gid" column="reconReconResult_gid"/>
+        <result property="bizOrderNo" column="reconReconResult_biz_order_no"/>
+        <result property="partnerId" column="reconReconResult_partner_id"/>
+        <result property="merchantNo" column="reconReconResult_merchant_no"/>
+        <result property="sendBankSerialNo" column="reconReconResult_send_bank_serial_no"/>
+        <result property="channelOrderNo" column="reconReconResult_channel_order_no"/>
+        <result property="amountChannel" column="reconReconResult_amount_channel"/>
+        <result property="amountGateway" column="reconReconResult_amount_gateway"/>
+        <result property="finishTime" column="reconReconResult_finish_time"/>
+        <result property="memo" column="reconReconResult_memo"/>
+        <result property="status" column="reconReconResult_status"/>
+        <result property="tradeType" column="reconReconResult_trade_type"/>
+        <result property="charge" column="reconReconResult_charge"/>
+        <result property="channelType" column="reconReconResult_channel_type"/>
+        <result property="profitStatus" column="reconReconResult_profit_status"/>
+        <result property="profitMemo" column="reconReconResult_profit_memo"/>
+        <result property="createTime" column="reconReconResult_create_time"/>
+        <result property="updateTime" column="reconReconResult_update_time"/>
+    </resultMap>
+
+    <sql id="reconReconResultSqlSelect">
+            reconReconResult.id as reconReconResult_id,
+            reconReconResult.period_no as reconReconResult_period_no,
+            reconReconResult.gid as reconReconResult_gid,
+            reconReconResult.biz_order_no as reconReconResult_biz_order_no,
+            reconReconResult.partner_id as reconReconResult_partner_id,
+            reconReconResult.merchant_no as reconReconResult_merchant_no,
+            reconReconResult.send_bank_serial_no as reconReconResult_send_bank_serial_no,
+            reconReconResult.channel_order_no as reconReconResult_channel_order_no,
+            reconReconResult.amount_channel as reconReconResult_amount_channel,
+            reconReconResult.amount_gateway as reconReconResult_amount_gateway,
+            reconReconResult.finish_time as reconReconResult_finish_time,
+            reconReconResult.memo as reconReconResult_memo,
+            reconReconResult.status as reconReconResult_status,
+            reconReconResult.trade_type as reconReconResult_trade_type,
+            reconReconResult.charge as reconReconResult_charge,
+            reconReconResult.channel_type as reconReconResult_channel_type,
+            reconReconResult.profit_status as reconReconResult_profit_status,
+            reconReconResult.profit_memo as reconReconResult_profit_memo,
+            reconReconResult.create_time as reconReconResult_create_time,
+            reconReconResult.update_time as reconReconResult_update_time
+    </sql>
+
+</mapper>

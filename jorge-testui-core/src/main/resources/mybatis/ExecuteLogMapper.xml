@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.platform.dao.ExecuteLogDao">
+
+    <resultMap id="executeLogResultMap" type="com.jorge.testui.platform.entity.ExecuteLog">
+        <id property="id" column="executeLog_id"/>
+        <result property="projectNo" column="executeLog_project_no"/>
+        <result property="interfaceNo" column="executeLog_interface_no"/>
+        <result property="caseNo" column="executeLog_case_no"/>
+        <result property="parameterNo" column="executeLog_parameter_no"/>
+        <result property="parameters" column="executeLog_parameters"/>
+    </resultMap>
+
+    <sql id="executeLogSqlSelect">
+            executeLog.id as executeLog_id,
+            executeLog.project_no as executeLog_project_no,
+            executeLog.interface_no as executeLog_interface_no,
+            executeLog.case_no as executeLog_case_no,
+            executeLog.parameter_no as executeLog_parameter_no,
+            executeLog.parameters as executeLog_parameters
+    </sql>
+
+</mapper>

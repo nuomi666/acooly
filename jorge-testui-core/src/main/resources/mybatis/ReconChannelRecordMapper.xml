@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.database.bill.dao.ReconChannelRecordDao">
+
+    <resultMap id="reconChannelRecordResultMap" type="com.jorge.testui.database.bill.entity.ReconChannelRecord">
+        <id property="id" column="reconChannelRecord_id"/>
+        <result property="periodNo" column="reconChannelRecord_period_no"/>
+        <result property="channelType" column="reconChannelRecord_channel_type"/>
+        <result property="partnerId" column="reconChannelRecord_partner_id"/>
+        <result property="sendBankOrderNo" column="reconChannelRecord_send_bank_order_no"/>
+        <result property="channelOrderNo" column="reconChannelRecord_channel_order_no"/>
+        <result property="amount" column="reconChannelRecord_amount"/>
+        <result property="amountIn" column="reconChannelRecord_amount_in"/>
+        <result property="amountBank" column="reconChannelRecord_amount_bank"/>
+        <result property="balance" column="reconChannelRecord_balance"/>
+        <result property="balanceBefore" column="reconChannelRecord_balance_before"/>
+        <result property="changeDirection" column="reconChannelRecord_change_direction"/>
+        <result property="charge" column="reconChannelRecord_charge"/>
+        <result property="memo" column="reconChannelRecord_memo"/>
+        <result property="orderTime" column="reconChannelRecord_order_time"/>
+        <result property="tradeStatus" column="reconChannelRecord_trade_status"/>
+        <result property="tradeType" column="reconChannelRecord_trade_type"/>
+        <result property="status" column="reconChannelRecord_status"/>
+        <result property="comments" column="reconChannelRecord_comments"/>
+        <result property="createTime" column="reconChannelRecord_create_time"/>
+        <result property="updateTime" column="reconChannelRecord_update_time"/>
+    </resultMap>
+
+    <sql id="reconChannelRecordSqlSelect">
+            reconChannelRecord.id as reconChannelRecord_id,
+            reconChannelRecord.period_no as reconChannelRecord_period_no,
+            reconChannelRecord.channel_type as reconChannelRecord_channel_type,
+            reconChannelRecord.partner_id as reconChannelRecord_partner_id,
+            reconChannelRecord.send_bank_order_no as reconChannelRecord_send_bank_order_no,
+            reconChannelRecord.channel_order_no as reconChannelRecord_channel_order_no,
+            reconChannelRecord.amount as reconChannelRecord_amount,
+            reconChannelRecord.amount_in as reconChannelRecord_amount_in,
+            reconChannelRecord.amount_bank as reconChannelRecord_amount_bank,
+            reconChannelRecord.balance as reconChannelRecord_balance,
+            reconChannelRecord.balance_before as reconChannelRecord_balance_before,
+            reconChannelRecord.change_direction as reconChannelRecord_change_direction,
+            reconChannelRecord.charge as reconChannelRecord_charge,
+            reconChannelRecord.memo as reconChannelRecord_memo,
+            reconChannelRecord.order_time as reconChannelRecord_order_time,
+            reconChannelRecord.trade_status as reconChannelRecord_trade_status,
+            reconChannelRecord.trade_type as reconChannelRecord_trade_type,
+            reconChannelRecord.status as reconChannelRecord_status,
+            reconChannelRecord.comments as reconChannelRecord_comments,
+            reconChannelRecord.create_time as reconChannelRecord_create_time,
+            reconChannelRecord.update_time as reconChannelRecord_update_time
+    </sql>
+
+</mapper>

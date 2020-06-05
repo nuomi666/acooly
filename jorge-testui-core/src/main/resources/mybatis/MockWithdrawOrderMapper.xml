@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.database.mock.dao.MockWithdrawOrderDao">
+
+    <resultMap id="mockWithdrawOrderResultMap" type="com.jorge.testui.database.mock.entity.MockWithdrawOrder">
+        <id property="id" column="mockWithdrawOrder_id"/>
+        <result property="mockOrderNo" column="mockWithdrawOrder_mock_order_no"/>
+        <result property="bizOrderNo" column="mockWithdrawOrder_biz_order_no"/>
+        <result property="amount" column="mockWithdrawOrder_amount"/>
+        <result property="sucAmount" column="mockWithdrawOrder_suc_amount"/>
+        <result property="batchNo" column="mockWithdrawOrder_batch_no"/>
+        <result property="userId" column="mockWithdrawOrder_user_id"/>
+        <result property="recBankId" column="mockWithdrawOrder_rec_bank_id"/>
+        <result property="recBankName" column="mockWithdrawOrder_rec_bank_name"/>
+        <result property="recAccountNo" column="mockWithdrawOrder_rec_account_no"/>
+        <result property="recAccountName" column="mockWithdrawOrder_rec_account_name"/>
+        <result property="recBankLasalle" column="mockWithdrawOrder_rec_bank_lasalle"/>
+        <result property="recProvince" column="mockWithdrawOrder_rec_province"/>
+        <result property="recCity" column="mockWithdrawOrder_rec_city"/>
+        <result property="payBankId" column="mockWithdrawOrder_pay_bank_id"/>
+        <result property="payAccountNo" column="mockWithdrawOrder_pay_account_no"/>
+        <result property="payAccountName" column="mockWithdrawOrder_pay_account_name"/>
+        <result property="payBankName" column="mockWithdrawOrder_pay_bank_name"/>
+        <result property="publicTag" column="mockWithdrawOrder_public_tag"/>
+        <result property="bankCardType" column="mockWithdrawOrder_bank_card_type"/>
+        <result property="memo" column="mockWithdrawOrder_memo"/>
+        <result property="mockNotifyStatus" column="mockWithdrawOrder_mock_notify_status"/>
+        <result property="mockNotifyCount" column="mockWithdrawOrder_mock_notify_count"/>
+        <result property="typeSource" column="mockWithdrawOrder_type_source"/>
+        <result property="mockStatus" column="mockWithdrawOrder_mock_status"/>
+        <result property="createTime" column="mockWithdrawOrder_create_time"/>
+        <result property="updateTime" column="mockWithdrawOrder_update_time"/>
+    </resultMap>
+
+    <sql id="mockWithdrawOrderSqlSelect">
+            mockWithdrawOrder.id as mockWithdrawOrder_id,
+            mockWithdrawOrder.mock_order_no as mockWithdrawOrder_mock_order_no,
+            mockWithdrawOrder.biz_order_no as mockWithdrawOrder_biz_order_no,
+            mockWithdrawOrder.amount as mockWithdrawOrder_amount,
+            mockWithdrawOrder.suc_amount as mockWithdrawOrder_suc_amount,
+            mockWithdrawOrder.batch_no as mockWithdrawOrder_batch_no,
+            mockWithdrawOrder.user_id as mockWithdrawOrder_user_id,
+            mockWithdrawOrder.rec_bank_id as mockWithdrawOrder_rec_bank_id,
+            mockWithdrawOrder.rec_bank_name as mockWithdrawOrder_rec_bank_name,
+            mockWithdrawOrder.rec_account_no as mockWithdrawOrder_rec_account_no,
+            mockWithdrawOrder.rec_account_name as mockWithdrawOrder_rec_account_name,
+            mockWithdrawOrder.rec_bank_lasalle as mockWithdrawOrder_rec_bank_lasalle,
+            mockWithdrawOrder.rec_province as mockWithdrawOrder_rec_province,
+            mockWithdrawOrder.rec_city as mockWithdrawOrder_rec_city,
+            mockWithdrawOrder.pay_bank_id as mockWithdrawOrder_pay_bank_id,
+            mockWithdrawOrder.pay_account_no as mockWithdrawOrder_pay_account_no,
+            mockWithdrawOrder.pay_account_name as mockWithdrawOrder_pay_account_name,
+            mockWithdrawOrder.pay_bank_name as mockWithdrawOrder_pay_bank_name,
+            mockWithdrawOrder.public_tag as mockWithdrawOrder_public_tag,
+            mockWithdrawOrder.bank_card_type as mockWithdrawOrder_bank_card_type,
+            mockWithdrawOrder.memo as mockWithdrawOrder_memo,
+            mockWithdrawOrder.mock_notify_status as mockWithdrawOrder_mock_notify_status,
+            mockWithdrawOrder.mock_notify_count as mockWithdrawOrder_mock_notify_count,
+            mockWithdrawOrder.type_source as mockWithdrawOrder_type_source,
+            mockWithdrawOrder.mock_status as mockWithdrawOrder_mock_status,
+            mockWithdrawOrder.create_time as mockWithdrawOrder_create_time,
+            mockWithdrawOrder.update_time as mockWithdrawOrder_update_time
+    </sql>
+
+</mapper>

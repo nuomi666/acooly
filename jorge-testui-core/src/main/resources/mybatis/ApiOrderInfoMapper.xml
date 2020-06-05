@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.database.openapi.dao.ApiOrderInfoDao">
+
+    <resultMap id="apiOrderInfoResultMap" type="com.jorge.testui.database.openapi.entity.ApiOrderInfo">
+        <id property="id" column="apiOrderInfo_id"/>
+        <result property="accessKey" column="apiOrderInfo_access_key"/>
+        <result property="partnerId" column="apiOrderInfo_partner_id"/>
+        <result property="gid" column="apiOrderInfo_gid"/>
+        <result property="requestNo" column="apiOrderInfo_request_no"/>
+        <result property="service" column="apiOrderInfo_service"/>
+        <result property="version" column="apiOrderInfo_version"/>
+        <result property="signType" column="apiOrderInfo_sign_type"/>
+        <result property="protocol" column="apiOrderInfo_protocol"/>
+        <result property="notifyUrl" column="apiOrderInfo_notify_url"/>
+        <result property="returnUrl" column="apiOrderInfo_return_url"/>
+        <result property="businessInfo" column="apiOrderInfo_business_info"/>
+        <result property="context" column="apiOrderInfo_context"/>
+        <result property="rawAddTime" column="apiOrderInfo_raw_add_time"/>
+        <result property="rawUpdateTime" column="apiOrderInfo_raw_update_time"/>
+    </resultMap>
+
+    <sql id="apiOrderInfoSqlSelect">
+            apiOrderInfo.id as apiOrderInfo_id,
+            apiOrderInfo.access_key as apiOrderInfo_access_key,
+            apiOrderInfo.partner_id as apiOrderInfo_partner_id,
+            apiOrderInfo.gid as apiOrderInfo_gid,
+            apiOrderInfo.request_no as apiOrderInfo_request_no,
+            apiOrderInfo.service as apiOrderInfo_service,
+            apiOrderInfo.version as apiOrderInfo_version,
+            apiOrderInfo.sign_type as apiOrderInfo_sign_type,
+            apiOrderInfo.protocol as apiOrderInfo_protocol,
+            apiOrderInfo.notify_url as apiOrderInfo_notify_url,
+            apiOrderInfo.return_url as apiOrderInfo_return_url,
+            apiOrderInfo.business_info as apiOrderInfo_business_info,
+            apiOrderInfo.context as apiOrderInfo_context,
+            apiOrderInfo.raw_add_time as apiOrderInfo_raw_add_time,
+            apiOrderInfo.raw_update_time as apiOrderInfo_raw_update_time
+    </sql>
+
+</mapper>

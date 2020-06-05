@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.database.mock.dao.MockSignInfoDao">
+
+    <resultMap id="mockSignInfoResultMap" type="com.jorge.testui.database.mock.entity.MockSignInfo">
+        <id property="id" column="mockSignInfo_id"/>
+        <result property="mockOrderNo" column="mockSignInfo_mock_order_no"/>
+        <result property="bizOrderNo" column="mockSignInfo_biz_order_no"/>
+        <result property="partnerId" column="mockSignInfo_partner_id"/>
+        <result property="mobileNo" column="mockSignInfo_mobile_no"/>
+        <result property="realName" column="mockSignInfo_real_name"/>
+        <result property="bankCardNo" column="mockSignInfo_bank_card_no"/>
+        <result property="certNo" column="mockSignInfo_cert_no"/>
+        <result property="certType" column="mockSignInfo_cert_type"/>
+        <result property="accountType" column="mockSignInfo_account_type"/>
+        <result property="userId" column="mockSignInfo_user_id"/>
+        <result property="outUserId" column="mockSignInfo_out_user_id"/>
+        <result property="memo" column="mockSignInfo_memo"/>
+        <result property="mockStatus" column="mockSignInfo_mock_status"/>
+        <result property="mockNotifyStatus" column="mockSignInfo_mock_notify_status"/>
+        <result property="mockNotifyCount" column="mockSignInfo_mock_notify_count"/>
+        <result property="createTime" column="mockSignInfo_create_time"/>
+        <result property="updateTime" column="mockSignInfo_update_time"/>
+    </resultMap>
+
+    <sql id="mockSignInfoSqlSelect">
+            mockSignInfo.ID as mockSignInfo_ID,
+            mockSignInfo.mock_order_no as mockSignInfo_mock_order_no,
+            mockSignInfo.biz_order_no as mockSignInfo_biz_order_no,
+            mockSignInfo.partner_id as mockSignInfo_partner_id,
+            mockSignInfo.mobile_no as mockSignInfo_mobile_no,
+            mockSignInfo.real_name as mockSignInfo_real_name,
+            mockSignInfo.bank_card_no as mockSignInfo_bank_card_no,
+            mockSignInfo.cert_no as mockSignInfo_cert_no,
+            mockSignInfo.cert_type as mockSignInfo_cert_type,
+            mockSignInfo.account_type as mockSignInfo_account_type,
+            mockSignInfo.user_id as mockSignInfo_user_id,
+            mockSignInfo.out_user_id as mockSignInfo_out_user_id,
+            mockSignInfo.memo as mockSignInfo_memo,
+            mockSignInfo.mock_status as mockSignInfo_mock_status,
+            mockSignInfo.mock_notify_status as mockSignInfo_mock_notify_status,
+            mockSignInfo.mock_notify_count as mockSignInfo_mock_notify_count,
+            mockSignInfo.create_time as mockSignInfo_create_time,
+            mockSignInfo.update_time as mockSignInfo_update_time
+    </sql>
+
+</mapper>

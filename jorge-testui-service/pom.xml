@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>jorge-testui-parent</artifactId>
+        <groupId>com.jorge.testui</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>jorge-testui-service</artifactId>
+    <name>jorge-testui-service</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jorge.testui</groupId>
+            <artifactId>jorge-testui-core</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cartechfin.cheyunpay</groupId>
+            <artifactId>cheyunpay-trade-facade</artifactId>
+            <version>2.0.6-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cartechfin.cheyunpay</groupId>
+            <artifactId>cheyunpay-member-facade</artifactId>
+            <version>2.0.7-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cartechfin.cheyunpay</groupId>
+            <artifactId>cheyunpay-member-openapi-message</artifactId>
+            <version>2.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cartechfin.cheyunpay</groupId>
+            <artifactId>cheyunpay-profit-facade</artifactId>
+            <version>2.0.3-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cartechfin.cheyunpay</groupId>
+            <artifactId>cheyunpay-paycore-facade</artifactId>
+            <version>2.0.5-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cartechfin.cheyunpay</groupId>
+            <artifactId>cheyunpay-gateway-facade</artifactId>
+            <version>2.0.5-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cartechfin.cheyunpay</groupId>
+            <artifactId>cheyunpay-bill-facade</artifactId>
+            <version>2.0.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.binarywang</groupId>
+            <artifactId>java-testdata-generator</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cartechfin.cheyunpay</groupId>
+            <artifactId>cheyunpay-common</artifactId>
+            <version>2.0.2-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.acooly</groupId>
+            <artifactId>acooly-component-mybatis</artifactId>
+            <version>5.0.0-20200214.150846-43</version>
+        </dependency>
+    </dependencies>
+
+</project>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.database.paycore.dao.PayPayengineOrderRefundDao">
+
+    <resultMap id="payPayengineOrderRefundResultMap" type="com.jorge.testui.database.paycore.entity.PayPayengineOrderRefund">
+        <id property="id" column="payPayengineOrderRefund_id"/>
+        <result property="gid" column="payPayengineOrderRefund_gid"/>
+        <result property="merchantNo" column="payPayengineOrderRefund_merchant_no"/>
+        <result property="partnerId" column="payPayengineOrderRefund_partner_id"/>
+        <result property="tradeType" column="payPayengineOrderRefund_trade_type"/>
+        <result property="orderNo" column="payPayengineOrderRefund_order_no"/>
+        <result property="orilTradeNo" column="payPayengineOrderRefund_oril_trade_no"/>
+        <result property="applyRefundOrderNo" column="payPayengineOrderRefund_apply_refund_order_no"/>
+        <result property="aggenOrderNo" column="payPayengineOrderRefund_aggen_order_no"/>
+        <result property="depositOrderNo" column="payPayengineOrderRefund_deposit_order_no"/>
+        <result property="refundScope" column="payPayengineOrderRefund_refund_scope"/>
+        <result property="isLastOperate" column="payPayengineOrderRefund_is_last_operate"/>
+        <result property="refundType" column="payPayengineOrderRefund_refund_type"/>
+        <result property="refundStatus" column="payPayengineOrderRefund_refund_status"/>
+        <result property="amount" column="payPayengineOrderRefund_amount"/>
+        <result property="amountIn" column="payPayengineOrderRefund_amount_in"/>
+        <result property="payType" column="payPayengineOrderRefund_pay_type"/>
+        <result property="depositBackReason" column="payPayengineOrderRefund_deposit_back_reason"/>
+        <result property="memo" column="payPayengineOrderRefund_memo"/>
+        <result property="finishTime" column="payPayengineOrderRefund_finish_time"/>
+        <result property="bankTime" column="payPayengineOrderRefund_bank_time"/>
+        <result property="notifyStatus" column="payPayengineOrderRefund_notify_status"/>
+        <result property="notifyNum" column="payPayengineOrderRefund_notify_num"/>
+        <result property="notifyMsg" column="payPayengineOrderRefund_notify_msg"/>
+        <result property="userId" column="payPayengineOrderRefund_user_id"/>
+        <result property="accountNo" column="payPayengineOrderRefund_account_no"/>
+        <result property="bankAccountNo" column="payPayengineOrderRefund_bank_account_no"/>
+        <result property="userName" column="payPayengineOrderRefund_user_name"/>
+        <result property="payeeUserId" column="payPayengineOrderRefund_payee_user_id"/>
+        <result property="payeeUserAccountNo" column="payPayengineOrderRefund_payee_user_account_no"/>
+        <result property="bankPayeeUserAccountNo" column="payPayengineOrderRefund_bank_payee_user_account_no"/>
+        <result property="payeeUserName" column="payPayengineOrderRefund_payee_user_name"/>
+        <result property="serviceBankType" column="payPayengineOrderRefund_service_bank_type"/>
+        <result property="createTime" column="payPayengineOrderRefund_create_time"/>
+        <result property="updateTime" column="payPayengineOrderRefund_update_time"/>
+    </resultMap>
+
+    <sql id="payPayengineOrderRefundSqlSelect">
+            payPayengineOrderRefund.id as payPayengineOrderRefund_id,
+            payPayengineOrderRefund.gid as payPayengineOrderRefund_gid,
+            payPayengineOrderRefund.merchant_no as payPayengineOrderRefund_merchant_no,
+            payPayengineOrderRefund.partner_id as payPayengineOrderRefund_partner_id,
+            payPayengineOrderRefund.trade_type as payPayengineOrderRefund_trade_type,
+            payPayengineOrderRefund.order_no as payPayengineOrderRefund_order_no,
+            payPayengineOrderRefund.oril_trade_no as payPayengineOrderRefund_oril_trade_no,
+            payPayengineOrderRefund.apply_refund_order_no as payPayengineOrderRefund_apply_refund_order_no,
+            payPayengineOrderRefund.aggen_order_no as payPayengineOrderRefund_aggen_order_no,
+            payPayengineOrderRefund.deposit_order_no as payPayengineOrderRefund_deposit_order_no,
+            payPayengineOrderRefund.refund_scope as payPayengineOrderRefund_refund_scope,
+            payPayengineOrderRefund.is_last_operate as payPayengineOrderRefund_is_last_operate,
+            payPayengineOrderRefund.refund_type as payPayengineOrderRefund_refund_type,
+            payPayengineOrderRefund.refund_status as payPayengineOrderRefund_refund_status,
+            payPayengineOrderRefund.amount as payPayengineOrderRefund_amount,
+            payPayengineOrderRefund.amount_in as payPayengineOrderRefund_amount_in,
+            payPayengineOrderRefund.pay_type as payPayengineOrderRefund_pay_type,
+            payPayengineOrderRefund.deposit_back_reason as payPayengineOrderRefund_deposit_back_reason,
+            payPayengineOrderRefund.memo as payPayengineOrderRefund_memo,
+            payPayengineOrderRefund.finish_time as payPayengineOrderRefund_finish_time,
+            payPayengineOrderRefund.bank_time as payPayengineOrderRefund_bank_time,
+            payPayengineOrderRefund.notify_status as payPayengineOrderRefund_notify_status,
+            payPayengineOrderRefund.notify_num as payPayengineOrderRefund_notify_num,
+            payPayengineOrderRefund.notify_msg as payPayengineOrderRefund_notify_msg,
+            payPayengineOrderRefund.user_id as payPayengineOrderRefund_user_id,
+            payPayengineOrderRefund.account_no as payPayengineOrderRefund_account_no,
+            payPayengineOrderRefund.bank_account_no as payPayengineOrderRefund_bank_account_no,
+            payPayengineOrderRefund.user_name as payPayengineOrderRefund_user_name,
+            payPayengineOrderRefund.payee_user_id as payPayengineOrderRefund_payee_user_id,
+            payPayengineOrderRefund.payee_user_account_no as payPayengineOrderRefund_payee_user_account_no,
+            payPayengineOrderRefund.bank_payee_user_account_no as payPayengineOrderRefund_bank_payee_user_account_no,
+            payPayengineOrderRefund.payee_user_name as payPayengineOrderRefund_payee_user_name,
+            payPayengineOrderRefund.service_bank_type as payPayengineOrderRefund_service_bank_type,
+            payPayengineOrderRefund.create_time as payPayengineOrderRefund_create_time,
+            payPayengineOrderRefund.update_time as payPayengineOrderRefund_update_time
+    </sql>
+
+</mapper>

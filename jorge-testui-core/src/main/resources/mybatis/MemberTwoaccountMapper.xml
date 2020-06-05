@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.database.member.dao.MemberTwoaccountDao">
+
+    <resultMap id="memberTwoaccountResultMap" type="com.jorge.testui.database.member.entity.MemberTwoaccount">
+        <id property="id" column="memberTwoaccount_id"/>
+        <result property="userNo" column="memberTwoaccount_user_no"/>
+        <result property="accountNo" column="memberTwoaccount_account_no"/>
+        <result property="realName" column="memberTwoaccount_real_name"/>
+        <result property="idCardNo" column="memberTwoaccount_id_card_no"/>
+        <result property="cardStartDate" column="memberTwoaccount_card_start_date"/>
+        <result property="cardEndDate" column="memberTwoaccount_card_end_date"/>
+        <result property="nation" column="memberTwoaccount_nation"/>
+        <result property="cardIssuingAuthority" column="memberTwoaccount_card_issuing_authority"/>
+        <result property="homeAddr" column="memberTwoaccount_home_addr"/>
+        <result property="mobileNo" column="memberTwoaccount_mobile_no"/>
+        <result property="bankCardNo" column="memberTwoaccount_bank_card_no"/>
+        <result property="job" column="memberTwoaccount_job"/>
+        <result property="custVideoPic" column="memberTwoaccount_cust_video_pic"/>
+        <result property="idcardFront" column="memberTwoaccount_idcard_front"/>
+        <result property="idcardBack" column="memberTwoaccount_idcard_back"/>
+        <result property="gid" column="memberTwoaccount_gid"/>
+        <result property="partnerId" column="memberTwoaccount_partner_id"/>
+        <result property="merchOrderNo" column="memberTwoaccount_merch_order_no"/>
+        <result property="openStatus" column="memberTwoaccount_open_status"/>
+        <result property="createTime" column="memberTwoaccount_create_time"/>
+        <result property="updateTime" column="memberTwoaccount_update_time"/>
+    </resultMap>
+
+    <sql id="memberTwoaccountSqlSelect">
+            memberTwoaccount.id as memberTwoaccount_id,
+            memberTwoaccount.user_no as memberTwoaccount_user_no,
+            memberTwoaccount.account_no as memberTwoaccount_account_no,
+            memberTwoaccount.real_name as memberTwoaccount_real_name,
+            memberTwoaccount.id_card_no as memberTwoaccount_id_card_no,
+            memberTwoaccount.card_start_date as memberTwoaccount_card_start_date,
+            memberTwoaccount.card_end_date as memberTwoaccount_card_end_date,
+            memberTwoaccount.nation as memberTwoaccount_nation,
+            memberTwoaccount.card_issuing_authority as memberTwoaccount_card_issuing_authority,
+            memberTwoaccount.home_addr as memberTwoaccount_home_addr,
+            memberTwoaccount.mobile_no as memberTwoaccount_mobile_no,
+            memberTwoaccount.bank_card_no as memberTwoaccount_bank_card_no,
+            memberTwoaccount.job as memberTwoaccount_job,
+            memberTwoaccount.cust_video_pic as memberTwoaccount_cust_video_pic,
+            memberTwoaccount.idcard_front as memberTwoaccount_idcard_front,
+            memberTwoaccount.idcard_back as memberTwoaccount_idcard_back,
+            memberTwoaccount.gid as memberTwoaccount_gid,
+            memberTwoaccount.partner_id as memberTwoaccount_partner_id,
+            memberTwoaccount.merch_order_no as memberTwoaccount_merch_order_no,
+            memberTwoaccount.open_status as memberTwoaccount_open_status,
+            memberTwoaccount.create_time as memberTwoaccount_create_time,
+            memberTwoaccount.update_time as memberTwoaccount_update_time
+    </sql>
+
+</mapper>

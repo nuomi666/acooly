@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.database.bill.dao.ReconGatewayRecordDao">
+
+    <resultMap id="reconGatewayRecordResultMap" type="com.jorge.testui.database.bill.entity.ReconGatewayRecord">
+        <id property="id" column="reconGatewayRecord_id"/>
+        <result property="periodNo" column="reconGatewayRecord_period_no"/>
+        <result property="gid" column="reconGatewayRecord_gid"/>
+        <result property="bizOrderNo" column="reconGatewayRecord_biz_order_no"/>
+        <result property="partnerId" column="reconGatewayRecord_partner_id"/>
+        <result property="merchantNo" column="reconGatewayRecord_merchant_no"/>
+        <result property="sendBankOrderNo" column="reconGatewayRecord_send_bank_order_no"/>
+        <result property="channelOrderNo" column="reconGatewayRecord_channel_order_no"/>
+        <result property="amount" column="reconGatewayRecord_amount"/>
+        <result property="amountIn" column="reconGatewayRecord_amount_in"/>
+        <result property="balance" column="reconGatewayRecord_balance"/>
+        <result property="changeDirection" column="reconGatewayRecord_change_direction"/>
+        <result property="channelApi" column="reconGatewayRecord_channel_api"/>
+        <result property="memo" column="reconGatewayRecord_memo"/>
+        <result property="orderTime" column="reconGatewayRecord_order_time"/>
+        <result property="tradeOrderType" column="reconGatewayRecord_trade_order_type"/>
+        <result property="tradeStatus" column="reconGatewayRecord_trade_status"/>
+        <result property="status" column="reconGatewayRecord_status"/>
+        <result property="comments" column="reconGatewayRecord_comments"/>
+        <result property="createTime" column="reconGatewayRecord_create_time"/>
+        <result property="updateTime" column="reconGatewayRecord_update_time"/>
+    </resultMap>
+
+    <sql id="reconGatewayRecordSqlSelect">
+            reconGatewayRecord.id as reconGatewayRecord_id,
+            reconGatewayRecord.period_no as reconGatewayRecord_period_no,
+            reconGatewayRecord.gid as reconGatewayRecord_gid,
+            reconGatewayRecord.biz_order_no as reconGatewayRecord_biz_order_no,
+            reconGatewayRecord.partner_id as reconGatewayRecord_partner_id,
+            reconGatewayRecord.merchant_no as reconGatewayRecord_merchant_no,
+            reconGatewayRecord.send_bank_order_no as reconGatewayRecord_send_bank_order_no,
+            reconGatewayRecord.channel_order_no as reconGatewayRecord_channel_order_no,
+            reconGatewayRecord.amount as reconGatewayRecord_amount,
+            reconGatewayRecord.amount_in as reconGatewayRecord_amount_in,
+            reconGatewayRecord.balance as reconGatewayRecord_balance,
+            reconGatewayRecord.change_direction as reconGatewayRecord_change_direction,
+            reconGatewayRecord.channel_api as reconGatewayRecord_channel_api,
+            reconGatewayRecord.memo as reconGatewayRecord_memo,
+            reconGatewayRecord.order_time as reconGatewayRecord_order_time,
+            reconGatewayRecord.trade_order_type as reconGatewayRecord_trade_order_type,
+            reconGatewayRecord.trade_status as reconGatewayRecord_trade_status,
+            reconGatewayRecord.status as reconGatewayRecord_status,
+            reconGatewayRecord.comments as reconGatewayRecord_comments,
+            reconGatewayRecord.create_time as reconGatewayRecord_create_time,
+            reconGatewayRecord.update_time as reconGatewayRecord_update_time
+    </sql>
+
+</mapper>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.platform.dao.ParametersDao">
+
+    <resultMap id="parametersResultMap" type="com.jorge.testui.platform.entity.Parameters">
+        <id property="id" column="parameters_id"/>
+        <result property="projectNo" column="parameters_project_no"/>
+        <result property="interfaceNo" column="parameters_interface_no"/>
+        <result property="caseNo" column="parameters_case_no"/>
+        <result property="parametersNo" column="parameters_parameters_no"/>
+        <result property="parameters" column="parameters_parameters"/>
+        <result property="createTime" column="parameters_create_time"/>
+        <result property="updateTime" column="parameters_update_time"/>
+        <result property="callCount" column="parameters_call_count"/>
+        <result property="callSuccessCount" column="parameters_call_success_count"/>
+        <result property="callFailCount" column="parameters_call_fail_count"/>
+        <result property="lastImplementResult" column="parameters_last_implement_result"/>
+        <result property="description" column="description"/>
+        <result property="createUser" column="create_user"/>
+    </resultMap>
+
+    <sql id="parametersSqlSelect">
+            parameters.id as parameters_id,
+            parameters.project_no as parameters_project_no,
+            parameters.interface_no as parameters_interface_no,
+            parameters.case_no as parameters_case_no,
+            parameters.parameters_no as parameters_parameters_no,
+            parameters.parameters as parameters_parameters,
+            parameters.call_count as parameters_call_count,
+            parameters.call_success_count as parameters_call_success_count,
+            parameters.call_fail_count as parameters_call_fail_count,
+            parameters.last_implement_result as parameters_last_implement_result,
+            parameters.create_time as parameters_create_time,
+            parameters.update_time as parameters_update_time,
+            parameters.description as description
+            parameters.create_user as create_user
+    </sql>
+
+</mapper>

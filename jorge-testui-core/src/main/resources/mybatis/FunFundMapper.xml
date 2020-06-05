@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.database.bill.dao.FunFundDao">
+
+    <resultMap id="funFundResultMap" type="com.jorge.testui.database.bill.entity.FunFund">
+        <id property="id" column="funFund_id"/>
+        <result property="gid" column="funFund_gid"/>
+        <result property="merchOrderNo" column="funFund_merch_order_no"/>
+        <result property="tradeNo" column="funFund_trade_no"/>
+        <result property="payOrderNo" column="funFund_pay_order_no"/>
+        <result property="balance" column="funFund_balance"/>
+        <result property="type" column="funFund_type"/>
+        <result property="status" column="funFund_status"/>
+        <result property="delay" column="funFund_delay"/>
+        <result property="userNo" column="funFund_user_no"/>
+        <result property="userName" column="funFund_user_name"/>
+        <result property="accountNo" column="funFund_account_no"/>
+        <result property="amount" column="funFund_amount"/>
+        <result property="chargeAmount" column="funFund_charge_amount"/>
+        <result property="actualAmount" column="funFund_actual_amount"/>
+        <result property="platformType" column="funFund_platform_type"/>
+        <result property="realName" column="funFund_real_name"/>
+        <result property="tradeTime" column="funFund_trade_time"/>
+        <result property="finishTime" column="funFund_finish_time"/>
+        <result property="partnerId" column="funFund_partner_id"/>
+        <result property="publicTag" column="funFund_public_tag"/>
+        <result property="bankCardType" column="funFund_bank_card_type"/>
+        <result property="bankCode" column="funFund_bank_code"/>
+        <result property="bankName" column="funFund_bank_name"/>
+        <result property="mobileNo" column="funFund_mobile_no"/>
+        <result property="isCharge" column="funFund_is_charge"/>
+        <result property="bankCardNo" column="funFund_bank_card_no"/>
+        <result property="bankCnapsNo" column="funFund_bank_cnaps_no"/>
+        <result property="bankRealName" column="funFund_bank_real_name"/>
+        <result property="bindNo" column="funFund_bind_no"/>
+        <result property="createTime" column="funFund_create_time"/>
+        <result property="updateTime" column="funFund_update_time"/>
+        <result property="memo" column="funFund_memo"/>
+        <result property="tradeMemo" column="funFund_trade_memo"/>
+        <result property="feeUserNo" column="funFund_fee_user_no"/>
+        <result property="chargeUserNo" column="funFund_charge_user_no"/>
+        <result property="actualChargeAmount" column="funFund_actual_charge_amount"/>
+        <result property="chargePayeeUserNo" column="funFund_charge_payee_user_no"/>
+        <result property="chargePayerUserNo" column="funFund_charge_payer_user_no"/>
+        <result property="feePayRole" column="funFund_fee_pay_role"/>
+        <result property="feePayUserNo" column="funFund_fee_pay_user_no"/>
+        <result property="periodNo" column="funFund_period_no"/>
+    </resultMap>
+
+    <sql id="funFundSqlSelect">
+            funFund.id as funFund_id,
+            funFund.gid as funFund_gid,
+            funFund.merch_order_no as funFund_merch_order_no,
+            funFund.trade_no as funFund_trade_no,
+            funFund.pay_order_no as funFund_pay_order_no,
+            funFund.balance as funFund_balance,
+            funFund.type as funFund_type,
+            funFund.status as funFund_status,
+            funFund.delay as funFund_delay,
+            funFund.user_no as funFund_user_no,
+            funFund.user_name as funFund_user_name,
+            funFund.account_no as funFund_account_no,
+            funFund.amount as funFund_amount,
+            funFund.charge_amount as funFund_charge_amount,
+            funFund.actual_amount as funFund_actual_amount,
+            funFund.platform_type as funFund_platform_type,
+            funFund.real_name as funFund_real_name,
+            funFund.trade_time as funFund_trade_time,
+            funFund.finish_time as funFund_finish_time,
+            funFund.partner_id as funFund_partner_id,
+            funFund.public_tag as funFund_public_tag,
+            funFund.bank_card_type as funFund_bank_card_type,
+            funFund.bank_code as funFund_bank_code,
+            funFund.bank_name as funFund_bank_name,
+            funFund.mobile_no as funFund_mobile_no,
+            funFund.is_charge as funFund_is_charge,
+            funFund.bank_card_no as funFund_bank_card_no,
+            funFund.bank_cnaps_no as funFund_bank_cnaps_no,
+            funFund.bank_real_name as funFund_bank_real_name,
+            funFund.bind_no as funFund_bind_no,
+            funFund.create_time as funFund_create_time,
+            funFund.update_time as funFund_update_time,
+            funFund.memo as funFund_memo,
+            funFund.trade_memo as funFund_trade_memo,
+            funFund.fee_user_no as funFund_fee_user_no,
+            funFund.charge_user_no as funFund_charge_user_no,
+            funFund.actual_charge_amount as funFund_actual_charge_amount,
+            funFund.charge_payee_user_no as funFund_charge_payee_user_no,
+            funFund.charge_payer_user_no as funFund_charge_payer_user_no,
+            funFund.fee_pay_role as funFund_fee_pay_role,
+            funFund.fee_pay_user_no as funFund_fee_pay_user_no,
+            funFund.period_no as funFund_period_no
+    </sql>
+
+</mapper>

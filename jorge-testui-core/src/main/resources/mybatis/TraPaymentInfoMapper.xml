@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.database.profit.dao.TraPaymentInfoDao">
+
+    <resultMap id="traPaymentInfoResultMap" type="com.jorge.testui.database.profit.entity.TraPaymentInfo">
+        <id property="id" column="traPaymentInfo_id"/>
+        <result property="gid" column="traPaymentInfo_gid"/>
+        <result property="tradeNo" column="traPaymentInfo_trade_no"/>
+        <result property="merchOrderNo" column="traPaymentInfo_merch_order_no"/>
+        <result property="payOrderNo" column="traPaymentInfo_pay_order_no"/>
+        <result property="appId" column="traPaymentInfo_app_id"/>
+        <result property="authCode" column="traPaymentInfo_auth_code"/>
+        <result property="openId" column="traPaymentInfo_open_id"/>
+        <result property="productCode" column="traPaymentInfo_product_code"/>
+        <result property="productType" column="traPaymentInfo_product_type"/>
+        <result property="productInfo" column="traPaymentInfo_product_info"/>
+        <result property="returnUrl" column="traPaymentInfo_return_url"/>
+        <result property="userIp" column="traPaymentInfo_user_ip"/>
+        <result property="publicTag" column="traPaymentInfo_public_tag"/>
+        <result property="bankCardType" column="traPaymentInfo_bank_card_type"/>
+        <result property="bankCode" column="traPaymentInfo_bank_code"/>
+        <result property="bankName" column="traPaymentInfo_bank_name"/>
+        <result property="mobileNo" column="traPaymentInfo_mobile_no"/>
+        <result property="isCharge" column="traPaymentInfo_is_charge"/>
+        <result property="bankCardNo" column="traPaymentInfo_bank_card_no"/>
+        <result property="bankCnapsNo" column="traPaymentInfo_bank_cnaps_no"/>
+        <result property="bankRealName" column="traPaymentInfo_bank_real_name"/>
+        <result property="bindNo" column="traPaymentInfo_bind_no"/>
+        <result property="realName" column="traPaymentInfo_real_name"/>
+        <result property="createTime" column="traPaymentInfo_create_time"/>
+        <result property="updateTime" column="traPaymentInfo_update_time"/>
+    </resultMap>
+
+    <sql id="traPaymentInfoSqlSelect">
+            traPaymentInfo.id as traPaymentInfo_id,
+            traPaymentInfo.gid as traPaymentInfo_gid,
+            traPaymentInfo.trade_no as traPaymentInfo_trade_no,
+            traPaymentInfo.merch_order_no as traPaymentInfo_merch_order_no,
+            traPaymentInfo.pay_order_no as traPaymentInfo_pay_order_no,
+            traPaymentInfo.app_id as traPaymentInfo_app_id,
+            traPaymentInfo.auth_code as traPaymentInfo_auth_code,
+            traPaymentInfo.open_id as traPaymentInfo_open_id,
+            traPaymentInfo.product_code as traPaymentInfo_product_code,
+            traPaymentInfo.product_type as traPaymentInfo_product_type,
+            traPaymentInfo.product_info as traPaymentInfo_product_info,
+            traPaymentInfo.return_url as traPaymentInfo_return_url,
+            traPaymentInfo.user_ip as traPaymentInfo_user_ip,
+            traPaymentInfo.public_tag as traPaymentInfo_public_tag,
+            traPaymentInfo.bank_card_type as traPaymentInfo_bank_card_type,
+            traPaymentInfo.bank_code as traPaymentInfo_bank_code,
+            traPaymentInfo.bank_name as traPaymentInfo_bank_name,
+            traPaymentInfo.mobile_no as traPaymentInfo_mobile_no,
+            traPaymentInfo.is_charge as traPaymentInfo_is_charge,
+            traPaymentInfo.bank_card_no as traPaymentInfo_bank_card_no,
+            traPaymentInfo.bank_cnaps_no as traPaymentInfo_bank_cnaps_no,
+            traPaymentInfo.bank_real_name as traPaymentInfo_bank_real_name,
+            traPaymentInfo.bind_no as traPaymentInfo_bind_no,
+            traPaymentInfo.real_name as traPaymentInfo_real_name,
+            traPaymentInfo.create_time as traPaymentInfo_create_time,
+            traPaymentInfo.update_time as traPaymentInfo_update_time
+    </sql>
+
+</mapper>

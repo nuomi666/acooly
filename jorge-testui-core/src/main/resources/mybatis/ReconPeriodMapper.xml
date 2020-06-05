@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.database.bill.dao.ReconPeriodDao">
+
+    <resultMap id="reconPeriodResultMap" type="com.jorge.testui.database.bill.entity.ReconPeriod">
+        <id property="id" column="reconPeriod_id"/>
+        <result property="periodNo" column="reconPeriod_period_no"/>
+        <result property="status" column="reconPeriod_status"/>
+        <result property="memo" column="reconPeriod_memo"/>
+        <result property="channelDataStatus" column="reconPeriod_channel_data_status"/>
+        <result property="channelDataMemo" column="reconPeriod_channel_data_memo"/>
+        <result property="gatewayDataStatus" column="reconPeriod_gateway_data_status"/>
+        <result property="gatewayDateNo" column="reconPeriod_gateway_date_no"/>
+        <result property="gatewayDataMemo" column="reconPeriod_gateway_data_memo"/>
+        <result property="successNo" column="reconPeriod_success_no"/>
+        <result property="excessNo" column="reconPeriod_excess_no"/>
+        <result property="failNo" column="reconPeriod_fail_no"/>
+        <result property="profitStatus" column="reconPeriod_profit_status"/>
+        <result property="profitMemo" column="reconPeriod_profit_memo"/>
+        <result property="commemts" column="reconPeriod_commemts"/>
+        <result property="createTime" column="reconPeriod_create_time"/>
+        <result property="updateTime" column="reconPeriod_update_time"/>
+    </resultMap>
+
+    <sql id="reconPeriodSqlSelect">
+            reconPeriod.id as reconPeriod_id,
+            reconPeriod.period_no as reconPeriod_period_no,
+            reconPeriod.status as reconPeriod_status,
+            reconPeriod.memo as reconPeriod_memo,
+            reconPeriod.channel_data_status as reconPeriod_channel_data_status,
+            reconPeriod.channel_data_memo as reconPeriod_channel_data_memo,
+            reconPeriod.gateway_data_status as reconPeriod_gateway_data_status,
+            reconPeriod.gateway_date_no as reconPeriod_gateway_date_no,
+            reconPeriod.gateway_data_memo as reconPeriod_gateway_data_memo,
+            reconPeriod.success_no as reconPeriod_success_no,
+            reconPeriod.excess_no as reconPeriod_excess_no,
+            reconPeriod.fail_no as reconPeriod_fail_no,
+            reconPeriod.profit_status as reconPeriod_profit_status,
+            reconPeriod.profit_memo as reconPeriod_profit_memo,
+            reconPeriod.commemts as reconPeriod_commemts,
+            reconPeriod.create_time as reconPeriod_create_time,
+            reconPeriod.update_time as reconPeriod_update_time
+    </sql>
+
+</mapper>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.database.bill.dao.TraTradeProfitDao">
+
+    <resultMap id="traTradeProfitResultMap" type="com.jorge.testui.database.bill.entity.TraTradeProfit">
+        <id property="id" column="traTradeProfit_id"/>
+        <result property="gid" column="traTradeProfit_gid"/>
+        <result property="merchOrderNo" column="traTradeProfit_merch_order_no"/>
+        <result property="tradeNo" column="traTradeProfit_trade_no"/>
+        <result property="profitMerchOrderNo" column="traTradeProfit_profit_merch_order_no"/>
+        <result property="payOrderNo" column="traTradeProfit_pay_order_no"/>
+        <result property="amount" column="traTradeProfit_amount"/>
+        <result property="status" column="traTradeProfit_status"/>
+        <result property="profitType" column="traTradeProfit_profit_type"/>
+        <result property="createTime" column="traTradeProfit_create_time"/>
+        <result property="updateTime" column="traTradeProfit_update_time"/>
+        <result property="tradeMemo" column="traTradeProfit_trade_memo"/>
+        <result property="memo" column="traTradeProfit_memo"/>
+        <result property="partnerId" column="traTradeProfit_partner_id"/>
+        <result property="chargeType" column="traTradeProfit_charge_type"/>
+        <result property="tradeName" column="traTradeProfit_trade_name"/>
+        <result property="profitAmount" column="traTradeProfit_profit_amount"/>
+        <result property="payerUserNo" column="traTradeProfit_payer_user_no"/>
+        <result property="payerAccountNo" column="traTradeProfit_payer_account_no"/>
+        <result property="payeeUserNo" column="traTradeProfit_payee_user_no"/>
+        <result property="payeeAccountNo" column="traTradeProfit_payee_account_no"/>
+        <result property="clearAmount" column="traTradeProfit_clear_amount"/>
+        <result property="type" column="traTradeProfit_type"/>
+        <result property="periodNo" column="traTradeProfit_period_no"/>
+    </resultMap>
+
+    <sql id="traTradeProfitSqlSelect">
+            traTradeProfit.id as traTradeProfit_id,
+            traTradeProfit.gid as traTradeProfit_gid,
+            traTradeProfit.merch_order_no as traTradeProfit_merch_order_no,
+            traTradeProfit.trade_no as traTradeProfit_trade_no,
+            traTradeProfit.profit_merch_order_no as traTradeProfit_profit_merch_order_no,
+            traTradeProfit.pay_order_no as traTradeProfit_pay_order_no,
+            traTradeProfit.amount as traTradeProfit_amount,
+            traTradeProfit.status as traTradeProfit_status,
+            traTradeProfit.profit_type as traTradeProfit_profit_type,
+            traTradeProfit.create_time as traTradeProfit_create_time,
+            traTradeProfit.update_time as traTradeProfit_update_time,
+            traTradeProfit.trade_memo as traTradeProfit_trade_memo,
+            traTradeProfit.memo as traTradeProfit_memo,
+            traTradeProfit.partner_id as traTradeProfit_partner_id,
+            traTradeProfit.charge_type as traTradeProfit_charge_type,
+            traTradeProfit.trade_name as traTradeProfit_trade_name,
+            traTradeProfit.profit_amount as traTradeProfit_profit_amount,
+            traTradeProfit.payer_user_no as traTradeProfit_payer_user_no,
+            traTradeProfit.payer_account_no as traTradeProfit_payer_account_no,
+            traTradeProfit.payee_user_no as traTradeProfit_payee_user_no,
+            traTradeProfit.payee_account_no as traTradeProfit_payee_account_no,
+            traTradeProfit.clear_amount as traTradeProfit_clear_amount,
+            traTradeProfit.type as traTradeProfit_type,
+            traTradeProfit.period_no as traTradeProfit_period_no
+    </sql>
+
+</mapper>

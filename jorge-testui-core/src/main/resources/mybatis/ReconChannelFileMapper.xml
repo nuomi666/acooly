@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jorge.testui.database.bill.dao.ReconChannelFileDao">
+
+    <resultMap id="reconChannelFileResultMap" type="com.jorge.testui.database.bill.entity.ReconChannelFile">
+        <id property="id" column="reconChannelFile_id"/>
+        <result property="periodNo" column="reconChannelFile_period_no"/>
+        <result property="channelType" column="reconChannelFile_channel_type"/>
+        <result property="partnerId" column="reconChannelFile_partner_id"/>
+        <result property="filePath" column="reconChannelFile_file_path"/>
+        <result property="downFileStatus" column="reconChannelFile_down_file_status"/>
+        <result property="downFileMemo" column="reconChannelFile_down_file_memo"/>
+        <result property="dataInsertStatus" column="reconChannelFile_data_insert_status"/>
+        <result property="dataInsertNo" column="reconChannelFile_data_insert_no"/>
+        <result property="dataInsertMemo" column="reconChannelFile_data_insert_memo"/>
+        <result property="createTime" column="reconChannelFile_create_time"/>
+        <result property="updateTime" column="reconChannelFile_update_time"/>
+    </resultMap>
+
+    <sql id="reconChannelFileSqlSelect">
+            reconChannelFile.id as reconChannelFile_id,
+            reconChannelFile.period_no as reconChannelFile_period_no,
+            reconChannelFile.channel_type as reconChannelFile_channel_type,
+            reconChannelFile.partner_id as reconChannelFile_partner_id,
+            reconChannelFile.file_path as reconChannelFile_file_path,
+            reconChannelFile.down_file_status as reconChannelFile_down_file_status,
+            reconChannelFile.down_file_memo as reconChannelFile_down_file_memo,
+            reconChannelFile.data_insert_status as reconChannelFile_data_insert_status,
+            reconChannelFile.data_insert_no as reconChannelFile_data_insert_no,
+            reconChannelFile.data_insert_memo as reconChannelFile_data_insert_memo,
+            reconChannelFile.create_time as reconChannelFile_create_time,
+            reconChannelFile.update_time as reconChannelFile_update_time
+    </sql>
+
+</mapper>
